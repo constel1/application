@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from chat.views import *
 
+# МАШРУТИЗАЦИЯ
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/chats', get_ListChat, name = "get_ListChats"),

@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 from .models import *
 from .serializers import MyUserSerializer, ChatSerializer, MessageSerializer
 
-
+#ОБРАБОТЧИКИ
 @api_view(['GET'])
 def get_users(request):
     users = MyUser.objects.all()
